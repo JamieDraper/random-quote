@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>My First Bootstrap Application</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="jumbotron">
+        	<div class="container text-center">
+        		<h1>Random Quotes for Fancy Folks</h1>
+        		<p>Below are a collection of random quotes you might like. Click the button below to start. Remember to tweet the ones you like!</p>
+        		<hr>
+	      		<a href="#" class="btn btn-lg btn-info" id="quoteButton">Start</a>
+	        </div>
+	    </div>
+	    <div class="container text-center">
+	    	<div id="quote"></div>
+	    	<div id="author"></div>
+	    </div>
+	    <div class="container">
+	    	<a href="#" onclick="window.open('http://twitter.com/home/?status=', 'newwindow', 'width=600, height=250'); return false" id="tweet";>Tweet this!</a>
+	    </div>
+
+		<script src="js/jquery-1.12.0.js"></script>	
+		<script src="js/bootstrap.js"></script>
+		<script src="js/getquote.js"></script>
+	</body>
+</html>
+
+<!--
+//////////// Random quote initial thoughts  //////////////
+
+1. Store quotes in an array of some description.
+	1.2 Maybe I can use an API that gives access to a bank of quotes?
+		http://www.quotes.net/ or Wikiquote?
+
+2. Find a way to randomly index into array when button clicked.
+	2.2 Do we add something to track quotes already show to stop them showing again?
+
+3. Display the quote a that index on the screen.
+
+4. Find a way to tweet a particular quote.
+
+
+When you get stuck, remember: Read-Search-Ask.
+
+1) Read the documentation or error
+2) Search Google
+3) Ask your friends for help
+-->
+
+
+<!--BUTTON(Says "Start" initially, then "Next" after 1st click) -->
+
+<!--VARIABLE LABEL (Displays quote and author. Seperate vars?) -->
+
+<!-- TWEET BUTTON (Tweets current quote & author) -->
+

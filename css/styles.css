@@ -1,0 +1,19 @@
+#quote {
+	font-size: 20px;
+	font-style: italic;
+	
+}
+
+#quote, #author {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.jumbotron {
+	background: url('http://www.unsigneddesign.com/Vintage%20Paper/paper3.jpg') center center;
+}
+
+h1 {
+	font-family: "Indie Flower", cursive;
+	font-weight: 800;
+}
