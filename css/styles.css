@@ -1,6 +1,5 @@
 #quote {
-	font-size: 20px;
-	font-style: italic;
+	font-size: 15px;
 	
 }
 
@@ -16,4 +15,16 @@
 h1 {
 	font-family: "Indie Flower", cursive;
 	font-weight: 800;
+}
+
+.quotes {
+	max-width: 60px;
+	margin: 0 auto;
+}
+button {
+
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+
 }

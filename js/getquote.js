@@ -23,7 +23,6 @@ function randomIntFromInterval(min,max)
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-
 function newQuoteAndAuthor() {
 	// pick a random number within range
 	var index = randomIntFromInterval(0, numbOfQuotes-1);
@@ -34,12 +33,20 @@ function newQuoteAndAuthor() {
 	elQuote.textContent = quote;
 	elAuthor.textContent = author;
 	// update twitter link
+	var baseURL = "http://twitter.com/home/?status=";
+	var tweetURL = baseURL + quote + " " + author;
+	console.log(tweetURL);
+
 }
+
+
 // When start clicked generate new quote
 $(document).ready(function(){
+	$('#tweet').hide();
     $('#quoteButton').click(function(){
     	newQuoteAndAuthor();
 		$('#quoteButton').text("Next");
+		$('#tweet').show();
     });
   });
 
