@@ -23,6 +23,11 @@ function randomIntFromInterval(min,max)
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 
+function tweet() {
+    text = encodeURIComponent(quote + " " + author);
+    window.open("http://twitter.com/home/?status=" + text, 'newwindow', 'width=600, height=250'); 
+    }
+
 function newQuoteAndAuthor() {
 	// pick a random number within range
 	var index = randomIntFromInterval(0, numbOfQuotes-1);
@@ -40,13 +45,17 @@ function newQuoteAndAuthor() {
 }
 
 
-// When start clicked generate new quote
 $(document).ready(function(){
 	$('#tweet').hide();
+	// Get quote when 'start' clicked
     $('#quoteButton').click(function(){
     	newQuoteAndAuthor();
 		$('#quoteButton').text("Next");
 		$('#tweet').show();
+    });
+    // Tweet current quote
+    $('#tweet').click(function(){
+    	tweet();
     });
   });
 
